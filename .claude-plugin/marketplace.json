@@ -1,0 +1,14 @@
+{
+  "name": "kalenda-ictirag-alpha",
+  "description": "Kalenda İçtirag Alpha: İçtirag eklentisinin yakın çevre alfa pazar yeri.",
+  "owner": {
+    "name": "CLE Legal"
+  },
+  "plugins": [
+    {
+      "name": "ictirag",
+      "description": "İçtirag mevzuat araçları (uzak MCP).",
+      "source": "./eklenti"
+    }
+  ]
+}

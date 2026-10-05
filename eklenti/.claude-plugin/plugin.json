@@ -1,0 +1,25 @@
+{
+  "name": "ictirag",
+  "version": "0.1.0",
+  "description": "İçtirag hukuk veri katmanı: mevzuat arama ve getirme araçları (uzak MCP).",
+  "author": {
+    "name": "CLE Legal"
+  },
+  "userConfig": {
+    "ictirag_token": {
+      "title": "İçtirag token",
+      "description": "Size verilen kişisel İçtirag erişim anahtarı. Claude Code'un güvenli deposunda saklanır, ayar dosyasına yazılmaz.",
+      "type": "string",
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "ictirag": {
+      "type": "http",
+      "url": "https://ictirag.cloud-cle.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.ictirag_token}"
+      }
+    }
+  }
+}
